@@ -5,7 +5,7 @@ let ButtonSubmit = document.getElementById('ButtonSubmit');
 var fs = require('fs');
 
 function WritingDateInFile(error){
-    fs.appendFile(`date.txt ${FirstName.value} '\n' ${SecondName.value}`)
+    fs.appendFile('date.txt',FirstName.value + '\n'+ SecondName.value)
     if(error) throw error;
 }
 
